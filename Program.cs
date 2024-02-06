@@ -10,6 +10,13 @@ public static class Program
     {
         Dictionary<OgolneSprawdzaniePierwszosci.CzyPierwsza, Wynik_Iteracji> wynik = new();
 
+        OgolneSprawdzaniePierwszosci.CzyPierwsza[] algorytmy =
+        {
+            OgolneSprawdzaniePierwszosci.CzyPierwszaOptymalnie,
+            OgolneSprawdzaniePierwszosci.CzyPierwszaPodstawowo,
+            OgolneSprawdzaniePierwszosci.CzyPierwszaPrymitywnie
+        };
+
         Console.Write("Podaj ile elementów: ");
         uint n = Convert.ToUInt32(Console.ReadLine());
 
@@ -21,12 +28,6 @@ public static class Program
         Console.Write("\n");
         Console.WriteLine(tab);
 
-        OgolneSprawdzaniePierwszosci.CzyPierwsza[] algorytmy =
-        {
-            OgolneSprawdzaniePierwszosci.CzyPierwszaOptymalnie,
-            OgolneSprawdzaniePierwszosci.CzyPierwszaPodstawowo,
-            OgolneSprawdzaniePierwszosci.CzyPierwszaPrymitywnie
-        };
         //wyniki = new TimeSpan[t.Length];
 
         Stopwatch czasomierz = new();
