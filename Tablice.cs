@@ -10,7 +10,7 @@ class KlasaTablicowa
         this.tab = new uint[n];
     }
 
-    public KlasaTablicowa() { }
+    private KlasaTablicowa() { }
 
     public void WypelnijLosowo(int max = Int32.MaxValue)
     {
