@@ -35,6 +35,18 @@ static class OgolneSprawdzaniePierwszosci
 
     public static bool CzyPierwszaPodstawowo(ulong n)
     {
+        switch (n)
+        {
+            case 0:
+                return false;
+            case 1:
+                return false;
+            case 2:
+                return true;
+        }
+        if (n % 2 == 0)
+            return false;
+
         for (ulong i = 3; i < Math.Sqrt(n); i += 2)
         {
             if (n % i == 0)
@@ -46,7 +58,15 @@ static class OgolneSprawdzaniePierwszosci
 
     public static bool CzyPierwszaPrymitywnie(ulong n)
     {
-        for (ulong i = 1; i <= n / 2; i++)
+        switch (n)
+        {
+            case 0:
+                return false;
+            case 1:
+                return false;
+        }
+
+        for (ulong i = 2; i <= n / 2; i++)
         {
             if (n % i == 0)
                 return false;
