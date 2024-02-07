@@ -13,6 +13,6 @@ static class RozszerzenieTablic
         }
     }
 
-    public static string ToString(this uint[] tab)
+    public static string DoTekstu(this uint[] tab)
         => String.Join("\n", tab);
 }

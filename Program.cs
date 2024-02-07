@@ -26,7 +26,7 @@ public static class Program
 
         Console.WriteLine(tab[1]);
         Console.Write("\n");
-        Console.WriteLine(tab);
+        Console.WriteLine(tab.DoTekstu());
 
         //wyniki = new TimeSpan[t.Length];
 
