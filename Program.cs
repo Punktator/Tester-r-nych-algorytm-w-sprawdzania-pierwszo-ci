@@ -20,7 +20,7 @@ public static class Program
         Console.Write("Podaj ile elementów: ");
         uint n = Convert.ToUInt32(Console.ReadLine());
 
-        KlasaTablicowa tab = new uint[n];
+        uint [] tab = new uint[n];
 
         tab.WypelnijLosowo();
 
