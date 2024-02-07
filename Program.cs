@@ -20,13 +20,13 @@ public static class Program
         Console.Write("Podaj ile elementów: ");
         uint n = Convert.ToUInt32(Console.ReadLine());
 
-        KlasaTablicowa tab = new uint[n];
+        uint [] tab = new uint[n];
 
         tab.WypelnijLosowo();
 
         Console.WriteLine(tab[1]);
         Console.Write("\n");
-        Console.WriteLine(tab);
+        Console.WriteLine(tab.DoTekstu());
 
         //wyniki = new TimeSpan[t.Length];
 
